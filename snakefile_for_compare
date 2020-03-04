@@ -1,6 +1,6 @@
 rule run_sourmash:
         input:
                "1.fa.gz.sig", "2.fa.gz.sig", "3.fa.gz.sig", "4.fa.gz.sig", "5.fa.gz.sig"
-        output: "cmp.matrix"
+        output: "all.cmp"
         shell: "sourmash compare {input} --ksize 31 --output {output}"
 
