@@ -1,0 +1,6 @@
+rule run_sourmash:
+        input:
+                "1.fa.gz","2.fa.gz","3.fa.gz","4.fa.gz","5.fa.gz"
+        output: "1.fa.gz.sig", "2.fa.gz.sig","3.fa.gz.sig","4.fa.gz.sig","5.fa.gz.sig"
+        shell: "sourmash compute {input}"
+
