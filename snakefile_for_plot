@@ -1,0 +1,4 @@
+rule run_sourmash:
+        input:
+               "all.cmp", "all.cmp.labels.txt"
+        shell: "sourmash plot --labels all.cmp"
